@@ -1,9 +1,63 @@
-<div class="row">
-	<div class="jumbotron col-lg-8 col-lg-offset-2">
-		<h2>GameReviewsBlog</h2>
-		<p>Blog de reviews de juegos a nivel personal o de opinión creadas por usuarios experimentados en el mundo del gaming.<br>
-		Régistrate ya utilizando el botón de abajo si quieres aportar contenido nuevo y opińión o Inicia Sesión si eres usuario registrado para crear nuevos artículos de análisis.	
-		</p>
-		<button class="btn btn-primary">Registrate</button><button>Iniciar Sesión</button>
+<div class="container-fluid">
+	<div class="row">
+		<div class="jumbotron col-lg-8 col-lg-offset-2">
+			<h2 style="text-decoration: underline;">GameReviewsBlog</h2><br>
+			<p>Blog de reviews de juegos a nivel personal o de opinión creadas por usuarios experimentados en el mundo del gaming.<br>
+				<strong>Régistrate</strong> ya utilizando el botón de abajo si quieres aportar contenido nuevo y opińión o <strong>Inicia Sesión</strong> si eres usuario registrado para crear nuevos artículos de análisis. 
+			</p><br>
+			<button class="btn btn-primary btn-lg" style="border: 0.5px black solid" data-toggle="modal" data-target="#registro">Registrate</button>
+			<button class="btn btn-primary btn-lg" style="border: 0.5px black solid" data-toggle="modal" data-target="#iniciar">Inicia Sesión</button>
+		</div>
+	</div>
+
+	<div class="modal" id="registro">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h2 class="modal-title" style="text-align: center;">Registro de usuario</h2>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label>Nombre: </label><input class="form-control" type="text" name="usuario">
+						</div>
+						<div class="form-group">
+							<label>Contraseña: </label><input class="form-control" type="password" name="pass">
+						</div>
+					
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary" style="border: 0.5px black solid">Registrar Usuario</button>
+					<button data-dismiss="modal" class="btn btn-danger" style="border: 0.5px black solid">Cerrar</button>
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+		<div class="modal" id="iniciar">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h2 class="modal-title" style="text-align: center;">Inicio de Sesion</h2>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label>Nombre: </label><input class="form-control" type="text" name="usuario">
+						</div>
+						<div class="form-group">
+							<label>Contraseña: </label><input class="form-control" type="password" name="pass">
+						</div>
+					
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary" style="border: 0.5px black solid">Iniciar Sesion</button>
+					<button data-dismiss="modal" class="btn btn-danger" style="border: 0.5px black solid">Cerrar</button>
+				</div>
+				</form>
+			</div>
+		</div>
 	</div>
 </div>
