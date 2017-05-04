@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app='GamesWeb'>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Inicio</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-route.min.js"></script>
+	<script type="text/javascript" src="config.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+			<li class="navbar-brand"> <a href="#!/">GameReviewsBlog</a></li>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="#!/lista">Ver Artículos</a></li>
+				<li ng-show="user"><a href="#!/gestblog">Gestión Blog</a></li>
+				<li ng-show="user"><a href="#!/gestuser">Gestion Usuarios</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="container-fluid" ng-view></div>
+
+</body>
+</html>
