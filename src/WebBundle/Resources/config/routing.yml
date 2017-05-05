@@ -1,3 +1,27 @@
 web_homepage:
     path:     /
     defaults: { _controller: WebBundle:Default:index }
+
+web_list:
+    path:    /list
+    defaults: { _controller: WebBundle:Web:list }  
+
+web_addUser:
+    path:    /addUser
+    defaults: { _controller: WebBundle:Web:addUser }    
+
+web_add:
+    path:   /add
+    defaults: { _controller: WebBundle:Web:add }
+
+web_edit:
+    path:   /edit/{id}
+    defaults: { _controller: WebBundle:Web:edit }   
+
+web_delete:
+    path:   /delete{id}
+    defaults: { _controller: WebBundle:Web:delete } 
+
+web_get:
+    path:     /get/{id}
+    defaults: { _controller: WebBundle:Web:get }          
